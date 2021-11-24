@@ -1,0 +1,310 @@
+<div class="page-content">
+    <!-- Page title -->
+    <div class="page-title">
+        <div class=" justify-content-end align-items-center">
+
+            <div class="d-flex align-items-center justify-content-between justify-content-md-end">
+
+                <a href="#modal-task-create" class="btn btn-sm btn-white btn-icon-only rounded-circle ml-4" data-toggle="modal">
+                    <span class="btn-inner--icon"><i class="fas fa-plus"></i></span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card card-stats">
+                <!-- Card body -->
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col">
+                            <h6 class="text-muted mb-1">Toplam Personel</h6>
+                            <span class="h5 font-weight-bold mb-0">339</span>
+                        </div>
+                        <div class="col-auto">
+                            <div class="icon bg-gradient-warning text-white rounded-circle icon-shape">
+                                <i class="fas fa-tags"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="mt-3 mb-0 text-sm">
+
+                        <span class="text-nowrap">Depo Sorumlusu personeller</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card card-stats">
+                <!-- Card body -->
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col">
+                            <h6 class="text-muted mb-1">Ana Depo</h6>
+                            <span class="h5 font-weight-bold mb-0">339</span>
+                        </div>
+                        <div class="col-auto">
+                            <div class="icon bg-gradient-warning text-white rounded-circle icon-shape">
+                                <i class="fas fa-tags"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="mt-3 mb-0 text-sm">
+                        <span class="text-nowrap">Türkiye Geneli</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card card-stats">
+                <!-- Card body -->
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col">
+                            <h6 class="text-muted mb-1">Toplam Ciro</h6>
+                            <span class="h5 font-weight-bold mb-0">339</span>
+                        </div>
+                        <div class="col-auto">
+                            <div class="icon bg-gradient-warning text-white rounded-circle icon-shape">
+                                <i class="fas fa-tags"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="mt-3 mb-0 text-sm">
+                        <span class="badge badge-soft-danger mr-2"><i class="fas fa-arrow-down"></i> 25%</span>
+                        <span class="text-nowrap">Alt Sınır Stok % oranı</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page title end-->
+
+    <!--Table-->
+    <div class="card" data-toggle="dragula" data-containers='["card-list-1", "card-list-2", "card-list-3"]'>
+        <!-- Card header -->
+        <div class="card-header actions-toolbar">
+            <div class="actions-search" id="actions-search">
+                <div class="input-group input-group-merge input-group-flush">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text bg-transparent"><i class="fas fa-search"></i></span>
+                    </div>
+                    <input type="text" class="form-control form-control-flush" placeholder="Type and hit enter ...">
+                    <div class="input-group-append">
+                        <a href="#" class="input-group-text bg-transparent" data-action="search-close" data-target="#actions-search"><i class="fas fa-times"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-between align-items-center">
+                <div class="col">
+                    <h6 class="d-inline-block mb-0">Depo</h6>
+                </div>
+                <div class="col text-right">
+                    <div class="actions"><a href="#" class="action-item mr-3" data-action="search-open" data-target="#actions-search"><i class="fas fa-search"></i></a>
+                        <div class="dropdown mr-3">
+                            <a href="#" class="action-item" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-filter"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-sort-amount-down"></i>Newest
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-sort-alpha-down"></i>From A-Z
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-sort-alpha-up"></i>From Z-A
+                                </a>
+                            </div>
+                        </div>
+                        <div class="dropdown" data-toggle="dropdown">
+                            <a href="#" class="action-item" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-ellipsis-h"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a href="#" class="dropdown-item">Refresh</a>
+                                <a href="#" class="dropdown-item">Manage Widgets</a>
+                                <a href="#" class="dropdown-item">Settings</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Card body Table-->
+
+        <div class="table-responsive">
+            <table class="table align-items-center">
+                <thead>
+                    <tr>
+                        <th style="width: 10%;" scope="col" class="sort font-weight-bold text-info" data-sort="name"></th>
+                        <th style="width: 35%;" scope="col" class="sort font-weight-bold text-info" data-sort="budget">Depo Adı</th>
+                        <th style="width: 15%;white-space: pre-line;" scope="col" class="sort font-weight-bold text-info text-center" data-sort="status">Ürün Adeti</th>
+                        <th style="width: 15%;white-space: pre-line;" scope="col" class="sort font-weight-bold text-info text-center" data-sort="completion">Ürün Koli Adeti</th>
+                        <th style="width: 15%;white-space: pre-line;" scope="col" class="sort font-weight-bold text-info text-center" data-sort="completion">Kritik Ürün Stok</th>
+                        <th style="width: 15%;" scope="col" class="sort font-weight-bold text-info" data-sort="completion"></th>
+                    </tr>
+                </thead>
+                <tbody class="list">
+                    <tr *ngFor="let item of [].constructor(5)">
+                        <th>
+                            <div class="align-items-center h2 text-center">
+                                <i class='fa fa-map-marker'></i>
+                            </div>
+                        </th>
+                        <th>
+
+                            <div class="d-flex align-items-center">
+                                <div class="flex-fill">
+                                    <div class="h6 text-sm mb-0">Bahçelievler Depo</div>
+                                    <p style="white-space: pre-line" class="text-sm  mb-0">
+                                        Yıldırım Beyazit Mah. Barbaros Cd. Yıldız Sk. No. 34/1 Sarıyer/İstanbul
+                                    </p>
+                                </div>
+                            </div>
+
+                        </th>
+                        <td class="text-center">
+                            <span>456</span>
+                        </td>
+                        <td class="text-center">
+                            <span class="status">45</span>
+                        </td>
+                        <td class="text-center">
+                            <span class="status badge badge-danger rounded-pill">13</span>
+                        </td>
+
+                        <td>
+                            <div class="d-flex justify-content-end">
+                                <span class="mr-2"><i class="far fa-edit"></i></span>
+                                <span class="mr-2 "><i class="fas fa-pencil-alt"></i></span>
+                                <span class="mr-2 text-danger"><i class="fas fa-trash"></i></span>
+                            </div>
+                        </td>
+
+                    </tr>
+
+
+
+
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+    <!-- Load more -->
+    <div class="mt-4 text-center">
+        <a href="#" class="btn btn-sm btn-neutral rounded-pill shadow hover-translate-y-n3">Load more ...</a>
+    </div>
+    <!--Table end-->
+    <!-- Create task modal-->
+    <div class="modal fade" id="modal-task-create" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <!-- Sales Unid Description -->
+                    <div class="form-group">
+                        <label class="form-control-label">Depo Adı</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <!--Store-->
+                    <div class="form-group">
+                        <label class="form-control-label mb-0">Depo Adres</label>
+                        <small class="form-text text-muted mb-2 mt-0">Lütfen açık adres yazınız</small>
+                        <textarea class="form-control" data-toggle="autosize" rows="1"></textarea>
+                    </div>
+                    <!-- Sales Unit Types-->
+                    <div class="form-group">
+                        <label class="form-control-label mb-0">Depo Türü</label>
+                        <!--Checkbox-->
+                        <div class="d-flex justify-content-between flex-wrap">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="check">
+                                <label class="custom-control-label h6 text-sm">Ana Depo</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input">
+                                <label class="custom-control-label h6 text-sm">Depo</label>
+                            </div>
+
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input">
+                                <label class="custom-control-label h6 text-sm">Mağaza Depo</label>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- Location -->
+                    <div class="form-group">
+                        <label class="form-control-label">Depo Sorumlusu</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="list-group list-group-flush mb-4">
+                        <div class="list-group-item px-0">
+                            <div class="row align-items-center mb-2">
+                                <div class="col-auto">
+                                    <!-- Avatar -->
+                                    <a href="#" class="avatar avatar-sm rounded-circle">
+                                        <img alt="Image placeholder" src="../..//assets/img/theme/light/team-1-800x800.jpg">
+                                    </a>
+                                </div>
+                                <div class="col ml-n2">
+                                    <a href="#!" class="d-block h6 text-sm mb-0">Aytekin Demir</a>
+                                    <p class="card-text text-sm text-muted mb-0">
+                                        Mağaza Sorumlusu
+                                    </p>
+                                </div>
+                                <div class="col-auto text-right">
+                                    <span class="text-sm text-info">055377666</span>
+                                </div>
+                            </div>
+                            <div class="row align-items-center mb-2">
+                                <div class="col-auto">
+                                    <!-- Avatar -->
+                                    <a href="#" class="avatar avatar-sm rounded-circle">
+                                        <img alt="Image placeholder" src="../..//assets/img/theme/light/team-1-800x800.jpg">
+                                    </a>
+                                </div>
+                                <div class="col ml-n2">
+                                    <a href="#!" class="d-block h6 text-sm mb-0">Aytekin Demir</a>
+                                    <p class="card-text text-sm text-muted mb-0">
+                                        Mağaza Sorumlusu
+                                    </p>
+                                </div>
+                                <div class="col-auto text-right">
+                                    <span class="text-sm text-info">055377666</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Project tags -->
+                    <div class="form-group">
+                        <label class="form-control-label">Depo Özeliği</label>
+                        <div style="height: auto;" class="d-flex justify-content-start flex-wrap">
+                            <span class="badge badge-warning mr-2 mb-2">Derin Dondurucu</span>
+                            <span class="badge badge-warning mr-2 mb-2">Buz Dolabı</span>
+                            <span class="badge badge-warning mr-2 mb-2">Fırın</span>
+                            <span class="badge badge-warning mr-2 mb-2">Kahve Makınası</span>
+                            <span class="badge badge-warning mr-2 mb-2">Su</span>
+
+                        </div>
+                        <input type="text" style="border: 0px;" placeholder="Type here...">
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <div class="mr-auto">
+                        <button type="button" class="btn btn-sm btn-primary rounded-pill mr-2" data-dismiss="modal">Kaydet</button>
+
+                    </div>
+
+                    <button type="button" class="btn btn-sm btn-link text-muted px-2">Delete</button>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

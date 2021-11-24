@@ -1,0 +1,375 @@
+<div class="page-content ">
+    <!-- Page title -->
+    <div class="page-title">
+        <div class="justify-content-end align-items-center">
+
+            <div class=" d-flex align-items-center justify-content-between justify-content-md-end">
+                <!-- Filter input -->
+                <form class="bg-neutral rounded-pill d-inline-block">
+                    <div class="input-group input-group-sm input-group-merge input-group-flush">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text bg-transparent"><i class="fas fa-filter"></i></span>
+                        </div>
+                        <input type="text" class="form-control form-control-flush" placeholder="Filter results">
+                    </div>
+                </form>
+                <a href="#modal-task-create" class="btn btn-sm btn-white btn-icon-only rounded-circle ml-4" data-toggle="modal">
+                    <span class="btn-inner--icon"><i class="fas fa-plus"></i></span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12 col-md-10">
+            <div class="card" data-toggle="dragula" data-containers='["card-list-1", "card-list-2", "card-list-3"]'>
+                <!-- Project name -->
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-7 form-group">
+                            <label class="form-control-label">Store</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="col-sm-12 col-md-3 d-flex align-items-end form-group">
+
+                            <select class="form-select form-select-lg form-control" aria-label=".form-select-lg example">
+                                <option selected>Brand</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                              </select>
+                        </div>
+                        <div class="col-sm-12 col-md-2 form-group">
+                            <label class="form-control-label">Product_id</label>
+                            <span class="status form-control" style="border: 0px;">45677</span>
+                        </div>
+                    </div>
+                    <!-- Prpduct description -->
+                    <div class="form-group">
+                        <label class="form-control-label mb-0">Ürün Açıklaması</label>
+                        <small class="form-text text-muted mb-2 mt-0">Lütfen ürüne ait özel notları giriniz</small>
+                        <textarea class="form-control" data-toggle="autosize" rows="4" placeholder="açıklama"></textarea>
+                    </div>
+                    <!---->
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6">
+                            <div class="form-group">
+                                <label class="form-control-label">Storage Type</label>
+                                <!--Checkbox-->
+                                <div class="d-flex justify-content-between flex-wrap">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input">
+                                        <label class="custom-control-label h6 text-sm" for="check-item-5">Kuru</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input">
+                                        <label class="custom-control-label h6 text-sm" for="check-item-5">Soğuk</label>
+                                    </div>
+
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input">
+                                        <label class="custom-control-label h6 text-sm">Donuk</label>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-3">
+                            <div class="form-group">
+                                <label class="form-control-label">Product_id</label>
+                                <select class="form-select form-select-lg form-control" aria-label=".form-select-lg example">
+                                    <option selected>Brand</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                  </select>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Ürün Kategorisi-->
+                    <div class="form-group mb-5">
+                        <label class="form-control-label">Ürün Kategorisi</label>
+                        <select class="form-select form-select-lg form-control mb-2" aria-label=".form-select-lg example">
+                            <option selected>Brand</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        <select class="form-select form-select-lg form-control mb-2" aria-label=".form-select-lg example">
+                            <option selected>Brand</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+
+                    </div>
+                    <!--Product Contents-->
+                    <div class="row">
+                        <div class="col-sm-12 col-md-7">
+                            <div class="form-group">
+                                <label class="form-control-label mb-0">Product Contents</label>
+                                <small class="form-text text-muted mb-2 mt-0">Ürün içerisinde bulunan maddeler</small>
+                                <textarea class="form-control" data-toggle="autosize" rows="4" placeholder="açıklama"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-5 d-flex align-items-end">
+                            <div class="form-group">
+                                <label class="form-control-label mb-0">Product Allergens</label>
+
+                                <textarea class="form-control" data-toggle="autosize" rows="4" placeholder="açıklama"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!---->
+                    <div class="row">
+                        <div class="col-sm-6 col-md-3">
+                            <div class="form-group">
+                                <label class="form-control-label">KDV Orani</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <div class="form-group">
+                                <label class="form-control-label">Birim</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <div class="form-group">
+                                <label class="form-control-label">Bitim Tütü</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <div class="form-group">
+                                <label class="form-control-label">Min Stok Adeti</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Tekil Ürün Ebat Bilgileri-->
+                    <div class="form-group">
+                        <label class="form-control-label mb-0">Tekil Ürün Ebat Bilgileri</label>
+
+                        <small class="form-text text-muted mb-2 mt-0">Ürün en, boy, vb.</small>
+                    </div>
+
+                    <!---->
+                    <div class="row">
+                        <div class="col-sm-6 col-md-2">
+                            <div class="form-group">
+                                <label class="form-control-label">Of Units</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-2">
+                            <div class="form-group">
+                                <label class="form-control-label">Barkot</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-2">
+                            <div class="form-group">
+                                <label class="form-control-label">Ağırlık</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-2">
+                            <div class="form-group">
+                                <label class="form-control-label">Yükseklik</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-2">
+                            <div class="form-group">
+                                <label class="form-control-label">Genişlik</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-2">
+                            <div class="form-group">
+                                <label class="form-control-label">Uzunluk</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <!--Karton Ürün Ebat Bilgileri-->
+                    <div class="form-group">
+                        <label class="form-control-label mb-0">Karton Ürün Ebat Bilgileri</label>
+
+                        <small class="form-text text-muted mb-2 mt-0">Ürün en, boy, vb.</small>
+                    </div>
+                    <!---->
+                    <div class="row">
+                        <div class="col-sm-6 col-md-2">
+                            <div class="form-group">
+                                <label class="form-control-label">Of Units</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-2">
+                            <div class="form-group">
+                                <label class="form-control-label">Barkot</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-2">
+                            <div class="form-group">
+                                <label class="form-control-label">Ağırlık</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-2">
+                            <div class="form-group">
+                                <label class="form-control-label">Yükseklik</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-2">
+                            <div class="form-group">
+                                <label class="form-control-label">Genişlik</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-2">
+                            <div class="form-group">
+                                <label class="form-control-label">Uzunluk</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <!--Yeni Ürün Barkodları-->
+                    <div class="row">
+                        <div class="col-sm-12 col-md-7">
+                            <div class="form-group">
+                                <label class="form-control-label mb-0">Yeni Ürün Barkodları</label>
+                                <small class="form-text text-muted mb-2 mt-0">Ürün yenilenmesinden dolay türeyen barkodlar</small>
+                                <div class="row">
+                                    <div class="col">
+                                        <input type="text" class="form-control" placeholder="Ürün barkodu">
+                                    </div>
+                                    <div class="col">
+                                        <input type="text" class="form-control" placeholder="Koli barkodu">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-5 d-flex align-items-end">
+                            <div class="col-12 form-group">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <label class="form-control-label mb-3">Supplier</label>
+                                    <label class="form-control-label mb-3">Supplier_id</label>
+                                </div>
+                                <div class="form-control d-flex align-items-center justify-content-between">
+                                    <span>Ülker Merkez</span>
+                                    <span>56777</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Raf Ömürünö ait Bilgileri-->
+                    <div class="form-group">
+                        <label class="form-control-label mb-0">Raf Ömürünö ait Bilgileri</label>
+
+                        <small class="form-text text-muted mb-2 mt-0">Ürün en, boy, vb.</small>
+                    </div>
+                    <!---->
+                    <div class="row">
+                        <div class="col-sm-12 col-md-4">
+                            <div class="form-group">
+                                <label class="form-control-label">Raf Ömrü (Gün)</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-4">
+                            <div class="form-group">
+                                <label class="form-control-label">Uyarı Günü</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-4">
+                            <div class="form-group">
+                                <label class="form-control-label">Lokasyon Taşıma Günü</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <!--Master Carton-->
+                    <div class="form-group">
+                        <label class="form-control-label mb-0">Master Carton</label>
+
+                        <small class="form-text text-muted mb-2 mt-0">Ürün en, boy, vb.</small>
+                    </div>
+                    <!---->
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group">
+                                <label class="form-control-label">Of Units</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <label class="form-control-label">Barkot</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <label class="form-control-label">Ağırlık</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <label class="form-control-label">Yükseklik</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <label class="form-control-label">Genişlik</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <label class="form-control-label">Uzunluk</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <!--Master Carton-->
+                    <div class="form-group">
+                        <label class="form-control-label mb-0">Ürüne Ait Forograflar</label>
+
+                        <small class="form-text text-muted mb-2 mt-0">Drag and drop task file</small>
+                    </div>
+                    <!--Uplode file-->
+                    <div class="form-group text-center">
+                        <div class="form-control">
+                            <i class="fas fa-plus addIcon"><small style="font-size: 13px;" >Fotagraf Seç</small> </i>
+                            <input type="file" name="file" class=" opacity-0">
+                        </div>
+                    </div>
+                    <!--Button-->
+                    <div class="card-footer">
+                        <div class="d-flex flex-wrap justify-content-between  mr-auto">
+                            <div class="d-flex align-item-center">
+                                <label class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider round"></span> 
+                                </label>
+                                <label class="ml-3">Product Active/Passive</label>
+                            </div>
+
+                            <button type="button" class="btn btn-sm btn-primary rounded-pill">Ürünü Ekle</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

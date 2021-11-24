@@ -1,0 +1,14 @@
+input:focus {
+    border: 0px;
+}
+
+input:active {
+    border: 0px;
+}
+
+input[type="text"],
+input[type="password"],
+textarea,
+select {
+    outline: none;
+}

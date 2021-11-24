@@ -1,0 +1,143 @@
+<!-- Page content -->
+<div class="page-content mt-4">
+    <!-- Page title -->
+    <div class="page-title">
+        <div class="row justify-content-between align-items-center">
+            <div class="col-6 d-flex align-items-center justify-content-between justify-content-md-start mb-3 mb-md-0">
+                <!-- Page title + Go Back button -->
+                <div class="d-inline-block">
+                    <h5 class="h4 d-inline-block font-weight-400 mb-0 text-white">Users</h5>
+                </div>
+            </div>
+            <div class="col-6 d-flex align-items-center justify-content-between justify-content-md-end">
+                <!-- Filter input -->
+                <form class="bg-neutral rounded-pill d-inline-block">
+                    <div class="input-group input-group-sm input-group-merge input-group-flush">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text bg-transparent"><i class="fas fa-filter"></i></span>
+                        </div>
+                        <input type="text" class="form-control form-control-flush" placeholder="Filter results">
+                    </div>
+                </form>
+                <a href="#modal-task-create" class="btn btn-sm btn-white btn-icon-only rounded-circle ml-4" data-toggle="modal">
+                    <span class="btn-inner--icon"><i class="fas fa-plus"></i></span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div *ngFor="let item of [].constructor(10)" class="col-lg-3 col-sm-6">
+            <div class="card hover-shadow-lg">
+                <div class="card-body text-center">
+                    <div class="avatar-parent-child">
+                        <img alt="Image placeholder" src="../../assets/img/profile/selimedin.jpg" class="avatar  rounded-circle avatar-lg">
+                        <span class="avatar-child avatar-badge bg-success"></span>
+                    </div>
+                    <h5 class="h6 mt-4 mb-0">John Sullivan</h5>
+                    <a href="#" class="d-block text-sm text-muted mb-3">@john.sullivan</a>
+                    <div class="actions d-flex justify-content-between px-4">
+                        <a href="#" class="action-item">
+                            <i class="fas fa-user-edit"></i>
+                        </a>
+                        <a href="#" class="action-item">
+                            <i class="fas fa-bell"></i>
+                        </a>
+                        <a href="#" class="action-item">
+                            <i class="fas fa-trash-alt"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="card-body border-top">
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col-6">
+                            <div style="max-width: 120px;">
+                                <div class="spark-chart" data-toggle="spark-chart" data-type="line" data-height="50" data-color=success data-dataset="[47, 94, 24, 18, 26, 65, 31, 47, 10, 44, 45]"></div>
+                            </div>
+                        </div>
+                        <div class="col-auto text-center">
+                            <span class="d-block h4 mb-0">4</span>
+                            <span class="d-block text-sm text-muted">Open tasks</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <div class="actions d-flex justify-content-between">
+                        <a href="#" class="action-item">
+                            <span class="btn-inner--icon">Projects</span>
+                        </a>
+                        <a href="#" class="action-item">
+                            <span class="btn-inner--icon">See profile</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-lg-3 col-sm-6">
+            <div class="card card-fluid card-placeholder align-items-center justify-content-center">
+                <div class="text-center">
+                    <a href="#" class="stretched-link">
+                        <i class="fas fa-plus fa-2x text-muted"></i>
+                        <span class="h6 text-muted d-block mt-3">Add new user</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Load more -->
+    <div class="mt-4 text-center">
+        <a href="#" class="btn btn-sm btn-neutral rounded-pill shadow hover-translate-y-n3">Load more ...</a>
+    </div>
+
+
+    <!-- Create task modal -->
+    <div class="modal fade" id="modal-task-create" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <!-- Full name -->
+                    <div class="form-group">
+                        <label class="form-control-label">Ad Soyad</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <!-- Adsress user-->
+                    <div class="form-group">
+                        <label class="form-control-label mb-0">Adres</label>
+                        <small class="form-text text-muted mb-2 mt-0">Ev Adresini Giriniz</small>
+                        <textarea class="form-control" data-toggle="autosize" rows="1"></textarea>
+                    </div>
+                    <!-- TC -->
+                    <div class="form-group">
+                        <label class="form-control-label mb-0">TC No</label>
+                        <textarea class="form-control" data-toggle="autosize" rows="1"></textarea>
+                    </div>
+                    <!--Uplode file-->
+                    <div class="form-group">
+                        <label class="form-control-label mb-0">Görsel Seç</label>
+                        <div class="form-control">
+                            <i class="fas fa-plus addIcon"></i>
+                            <input type="file" name="file" class=" opacity-0">
+                        </div>
+                    </div>
+
+                    <!-- Due date -->
+                    <div class="form-group">
+                        <label class="form-control-label">Doğum Tarihi</label>
+                        <input type="date" class="form-control">
+                    </div>
+
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-sm btn-primary rounded-pill mr-auto" data-dismiss="modal">Save</button>
+                    <button type="button" class="btn btn-sm btn-link text-muted px-2">Cencel</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>

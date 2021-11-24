@@ -1,0 +1,23 @@
+.btn-sm {
+    padding: .5rem 1rem;
+    font-size: .500rem;
+    line-height: 1.1;
+    border-radius: .25rem
+}
+
+.bg-cyan {
+    background-color: #16AA97;
+}
+
+.text-light {
+    color: #fff;
+}
+
+.bg-lightSucces {
+    background-color: #C0EBCB;
+}
+
+.start-0 {
+    top: -10px;
+    left: -10px;
+}

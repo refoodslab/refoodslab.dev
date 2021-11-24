@@ -1,0 +1,133 @@
+<!-- Page content -->
+<div class="page-content">
+    <!-- Page title -->
+    <div class="page-title">
+        <div class="row justify-content-between align-items-center">
+            <div class="col-md-6 d-flex align-items-center justify-content-between justify-content-md-start mb-3 mb-md-0">
+                <!-- Page title + Go Back button -->
+                <div class="d-inline-block">
+                    <h5 class="h4 d-inline-block font-weight-400 mb-0 text-white">Users</h5>
+                </div>
+                <!-- Additional info -->
+                <div class="align-items-center ml-4 d-inline-flex">
+                    <span class="h4 text-info mb-0 mr-2">9 adet</span>
+                    <span class="text-sm opacity-7 text-white">gösteriliyor</span>
+                </div>
+
+
+            </div>
+            <div class="col-md-6 d-flex align-items-center justify-content-between justify-content-md-end">
+                <!-- Filter input -->
+                <form class="bg-neutral rounded-pill d-inline-block">
+                    <div class="input-group input-group-sm input-group-merge input-group-flush">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text bg-transparent"><i class="fas fa-filter"></i></span>
+                        </div>
+                        <input type="text" class="form-control form-control-flush" placeholder="Filter results">
+                    </div>
+                </form>
+                <a href="#modal-task-create" class="btn btn-sm btn-white btn-icon-only rounded-circle ml-4" data-toggle="modal">
+                    <span class="btn-inner--icon"><i class="fas fa-plus"></i></span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div *ngFor="let item of [].constructor(10)" class="col-lg-4 col-sm-6">
+            <div class="card hover-shadow-lg">
+                <div class="card-header border-0 pb-0">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <h6 class="mb-2">CocaCola</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body text-center">
+                    <a href="#" class="avatar avatar-lg hover-translate-y-n3">
+                        <img alt="Image placeholder" src="../assets/img/products/cocacola.png" class="">
+                    </a>
+                </div>
+
+                <div class="card-body border-top">
+
+                    <div class="actions d-flex justify-content-between px-1 mb-4">
+                        <span class="d-block text-sm text-muted ml-2">₺46.10</span>
+                        <span class="d-block text-sm text-whıte rounded-pill badge badge-success">Stokta Var</span>
+                    </div>
+
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col-6 text-center">
+                            <span class="d-block h4 mb-0">46<sup>%</sup></span>
+                            <span class="d-block text-sm text-muted">Geçen Hafta</span>
+                        </div>
+                        <div class="col-6 text-center">
+                            <span class="d-block h4 mb-0">35%</span>
+                            <span class="d-block text-sm text-muted">Geçem Ay</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <div class="actions d-flex justify-content-between px-4">
+                        <a href="#" class="action-item">
+                            <i class="fas fa-user-edit"></i>
+                        </a>
+                        <a href="#" class="action-item">
+                            <i class="fas fa-bell"></i>
+                        </a>
+                        <a href="#" class="action-item">
+                            <i class="fas fa-trash-alt"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6">
+            <div class="card card-fluid card-placeholder align-items-center justify-content-center">
+                <div class="text-center">
+                    <a href="#" class="stretched-link">
+                        <i class="fas fa-plus fa-2x text-muted"></i>
+                        <span class="h6 text-muted d-block mt-3">Add new user</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Load more -->
+    <div class="mt-4 text-center">
+        <a href="#" class="btn btn-sm btn-neutral rounded-pill shadow hover-translate-y-n3">Load more ...</a>
+    </div>
+
+    <!-- Create task modal planogram-->
+    <div class="modal fade" id="modal-task-create" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <!-- Sales Unid ID -->
+                    <div class="form-group">
+                        <label class="form-control-label">Etiket Adı</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <!--Shelf ID-->
+                    <div class="form-group">
+                        <label class="form-control-label mb-0">Ürün Çıkış Adat</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <!-- Sıra No-->
+                    <div class="form-group">
+                        <label class="form-control-label mb-0">Ürün Dondurucudan çıktıntan sonra 3 gün içerisinde Tüketilmelidir </label>
+
+                    </div>
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-sm btn-primary rounded-pill mr-auto" data-dismiss="modal">Etiketi Yazdır</button>
+                    <button type="button" class="btn btn-sm btn-link text-muted px-2">İptal</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

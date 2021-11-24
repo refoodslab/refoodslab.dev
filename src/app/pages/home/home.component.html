@@ -1,0 +1,506 @@
+<!-- Page content -->
+<div class="page-content">
+    <!-- Page title -->
+    <div class="page-title">
+        <div class="row justify-content-between align-items-center">
+            <div class="col-md-8 mb-3 mb-md-0">
+                <h5 class="h3 font-weight-400 mb-0 text-white">Merhaba Selim,</h5>
+                <div class="mb-1">
+                    <span class="btn btn-sm btn-white text-danger rounded-pill">12 dk önce</span>
+                    <span class="text-sm text-white font-italic">Akbank Mağazasında Stoklarda azalma tespit edildi</span>
+                </div>
+                <div class="mb-1">
+                    <span class="btn btn-sm btn-white text-danger rounded-pill">36 dk önce</span>
+                    <span class="text-sm text-white font-italic">Bugün tüm mağazalarda ençok satılan "Ülker Çekolat" olmuştur</span>
+                </div>
+                <div class="mb-1">
+                    <span class="btn btn-sm text-white rounded-pill" style="background-color: #4bd6e5;">46 dk önce</span>
+                    <span class="text-sm text-white font-italic">Turkcell şübesine ürünler başarı ile teslim edilmiştir</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xl-8 col-md-6 d-flex flex-column">
+            <div class="card card-fluid">
+                <div class="card-header">
+                    <h6 class="mb-0">Satış Grafiği</h6>
+                </div>
+                <div class="card-body">
+                    <!-- Chart -->
+                    <div id="apex-engagement" data-color="primary" data-height="280"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-sm-12">
+                    <div class="card card-fluid">
+                        <div class="card-body ">
+                            <div class="row align-items-center mb-0">
+                                <div class="col-auto">
+                                    <div class="progress-circle progress-sm" id="progress-1" data-progress="80" data-text="%80" data-color="danger"></div>
+                                </div>
+                                <div class="col">
+                                    <a href="#!" class="d-block h6 mb-0">Ürünlerin</a>
+                                    <a href="#" class="text-sm text-muted">%80 SKT geçmiş</a>
+                                </div>
+                            </div>
+                            <div class="row align-items-center mb-4">
+                                <div class="col-auto">
+                                    <div class="progress-circle progress-sm" id="progress-2" data-progress="20" data-text="%20" data-color="warning"></div>
+                                </div>
+                                <div class="col">
+                                    <a href="#!" class="d-block h6 mb-0">Ürün stokları</a>
+                                    <a href="#" class="text-sm text-muted">%20 altına düşmüş</a>
+                                </div>
+                            </div>
+                            <div class="row align-items-center">
+                                <div class="col-auto">
+                                    <div class="progress-circle progress-sm" id="progress-3" data-progress="60" data-text="%60" data-color="info"></div>
+                                </div>
+                                <div class="col">
+                                    <a href="#!" class="d-block h6 mb-0">Satışları düşen</a>
+                                    <a href="#" class="text-sm text-muted">%60 ürün tespit edildi</a>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-sm btn-block btn-secondary mt-5">Tümünü Görüntüle</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-12">
+                    <div class="card bg-cyan card-fluid text-light ">
+                        <div class="card-body mt-3 mb-5 text-center d-flex flex-column justify-content-center">
+                            <h5 class="mb-4 fw-bold text-light">Bügün Toplam</h5>
+                            <h1 class="text-light fw-bold">26.510 ₺</h1>
+                            <h6 class="text-light">Ciro elde edilmiştir</h6>
+                            <div class="w-50 mx-auto">
+                                <a href="#" class="btn btn-sm btn-white btn-icon rounded-pill shadow hover-translate-y-n3">
+                                    <span class="btn-inner--icon" style="font-size: 13px;"><i class="fas fa-arrow-up"></i></span>
+                                    <span class="btn-inner--text" style="font-size: 13px;">₺2.300</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+        <div class="col-xl-4 col-md-6 d-flex flex-column">
+            <div class="card border rounded text-light card-fluid">
+                <div class="card-body  text-center d-flex flex-column justify-content-center">
+                    <label class="">Bügün Elleştirme Şübeleri</label>
+                    <h3 class="fw-bold mb-0 mb-0">17</h3>
+                    <h6 class="text-center mt-0 mt-0">adet</h6>
+                    <div class="w-50 mx-auto">
+                        <a href="#" class="btn btn-sm bg-lightSucces text-success btn-icon shadow">
+                            <span class="btn-inner--text" style="font-size: 13px;">%45</span>
+                        </a>
+                    </div>
+                    <small class="text-success mt-2">7 şübeleye Teslimat gerçekleşti</small>
+
+                </div>
+
+
+                <div class="list-group list-group-flush">
+                    <a href="#" *ngFor="let item of [].constructor(3)" class="list-group-item list-group-item-action mb-1">
+                        <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="2 hrs ago">
+                            <div class="">
+                                <span class="avatar position-relative">
+                                        <img src="../../assets/img/brand/turkcell_icon.png" alt="">
+                                        <span class="position-absolute start-0 badge rounded-pill bg-cyan">
+                                            2    
+                                        </span>
+                                </span>
+
+                            </div>
+                            <div class="flex-fill ml-3">
+                                <div class="h6 text-sm mb-0">Turkcell Mağaza</div>
+                                <p class="lh-140 mb-0" style="font-size: 12px;">
+                                    Toplam, 4 farklı <span class="text-dark">78 adet</span> ürün teslim edilecek
+                                </p>
+                                <small style="font-size: 11px;"><i class="fas fa-clock"></i> 7.45 teslimat saati</small>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+                <div class="card-footer py-2 text-center">
+                    <a href="#" class="text-sm text-muted font-weight-bold">Tüm Teslimat Şübesi</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="row">
+
+
+    </div>
+    <div class="row">
+        <div class="col-lg-3 col-sm-6">
+            <div class="card hover-shadow-lg">
+                <div class="card-body text-center">
+                    <div class="avatar-parent-child">
+                        <img alt="Image placeholder" src="../../assets/img/brands/turkcell.png" class="avatar  rounded avatar-lg">
+                        <!-- <span class="avatar-child avatar-badge bg-success"></span> -->
+                    </div>
+                    <h5 class="h6 mt-4 mb-0">Turkcell Mağaza</h5>
+                    <a href="#" class="d-block text-sm text-muted mb-3">Cevizlibağ</a>
+                    <div class="actions d-flex justify-content-between px-4">
+                        <a href="#" class="action-item">
+                            <i class="fas fa-user-edit"></i>
+                        </a>
+                        <a href="#" class="action-item">
+                            <i class="fas fa-bell"></i>
+                        </a>
+                        <a href="#" class="action-item">
+                            <i class="fas fa-trash-alt"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="card-body border-top">
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col-6">
+                            <div style="max-width: 120px;">
+                                <div class="spark-chart" data-toggle="spark-chart" data-type="line" data-height="50" data-color=success data-dataset="[47, 94, 24, 18, 26, 65, 31, 47, 10, 44, 45]"></div>
+                            </div>
+                        </div>
+                        <div class="col-auto text-center">
+                            <span class="d-block h4 mb-0">20</span>
+                            <span class="d-block text-sm text-muted">Adet Satış</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <div class="actions d-flex justify-content-between">
+                        <a href="#" class="action-item">
+                            <span class="btn-inner--icon">Mağaza</span>
+                        </a>
+                        <a href="#" class="action-item">
+                            <span class="btn-inner--icon">Tüm Satışlar</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+            <div class="card hover-shadow-lg">
+                <div class="card-body text-center">
+                    <div class="avatar-parent-child">
+                        <img alt="Image placeholder" src="../../assets/img/brands/mercedes.jpg" class="avatar  rounded avatar-lg">
+                        <!-- <span class="avatar-child avatar-badge bg-warning"></span> -->
+                    </div>
+                    <h5 class="h6 mt-4 mb-0">Mercedes Türkiye</h5>
+                    <a href="#" class="d-block text-sm text-muted mb-3">İkitelli</a>
+                    <div class="actions d-flex justify-content-between px-4">
+                        <a href="#" class="action-item">
+                            <i class="fas fa-user-edit"></i>
+                        </a>
+                        <a href="#" class="action-item">
+                            <i class="fas fa-bell"></i>
+                        </a>
+                        <a href="#" class="action-item">
+                            <i class="fas fa-trash-alt"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="card-body border-top">
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col-6">
+                            <div style="max-width: 120px;">
+                                <div class="spark-chart" data-toggle="spark-chart" data-type="line" data-height="50" data-color=warning data-dataset="[58, 76, 13, 59, 17, 76, 13, 13, 21, 94, 49]"></div>
+                            </div>
+                        </div>
+                        <div class="col-auto text-center">
+                            <span class="d-block h4 mb-0">8</span>
+                            <span class="d-block text-sm text-muted">Adet Satış</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <div class="actions d-flex justify-content-between">
+                        <a href="#" class="action-item">
+                            <span class="btn-inner--icon">Mağaza</span>
+                        </a>
+                        <a href="#" class="action-item">
+                            <span class="btn-inner--icon">Tüm Satışlar</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+            <div class="card hover-shadow-lg">
+                <div class="card-body text-center">
+                    <div class="avatar-parent-child">
+                        <img alt="Image placeholder" src="../../assets/img/brands/volkswagen.jpg" class="avatar  rounded avatar-lg">
+                        <!-- <span class="avatar-child avatar-badge bg-danger"></span> -->
+                    </div>
+                    <h5 class="h6 mt-4 mb-0">Volkswagen</h5>
+                    <a href="#" class="d-block text-sm text-muted mb-3">Bahçelievler</a>
+                    <div class="actions d-flex justify-content-between px-4">
+                        <a href="#" class="action-item">
+                            <i class="fas fa-user-edit"></i>
+                        </a>
+                        <a href="#" class="action-item">
+                            <i class="fas fa-bell"></i>
+                        </a>
+                        <a href="#" class="action-item">
+                            <i class="fas fa-trash-alt"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="card-body border-top">
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col-6">
+                            <div style="max-width: 120px;">
+                                <div class="spark-chart" data-toggle="spark-chart" data-type="line" data-height="50" data-color=danger data-dataset="[42, 55, 19, 16, 84, 24, 10, 11, 93, 15, 81]"></div>
+                            </div>
+                        </div>
+                        <div class="col-auto text-center">
+                            <span class="d-block h4 mb-0">12</span>
+                            <span class="d-block text-sm text-muted">Adet Satış</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <div class="actions d-flex justify-content-between">
+                        <a href="#" class="action-item">
+                            <span class="btn-inner--icon">Mağaza</span>
+                        </a>
+                        <a href="#" class="action-item">
+                            <span class="btn-inner--icon">Tüm Satışlar</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+            <div class="card hover-shadow-lg">
+                <div class="card-body text-center">
+                    <div class="avatar-parent-child">
+                        <img alt="Image placeholder" src="../../assets/img/brands/thy.jpg" class="avatar  rounded avatar-lg">
+                        <!-- <span class="avatar-child avatar-badge bg-success"></span> -->
+                    </div>
+                    <h5 class="h6 mt-4 mb-0">Türk Hava Yolları</h5>
+                    <a href="#" class="d-block text-sm text-muted mb-3">Sarıyer</a>
+                    <div class="actions d-flex justify-content-between px-4">
+                        <a href="#" class="action-item">
+                            <i class="fas fa-user-edit"></i>
+                        </a>
+                        <a href="#" class="action-item">
+                            <i class="fas fa-bell"></i>
+                        </a>
+                        <a href="#" class="action-item">
+                            <i class="fas fa-trash-alt"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="card-body border-top">
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col-6">
+                            <div style="max-width: 120px;">
+                                <div class="spark-chart" data-toggle="spark-chart" data-type="line" data-height="50" data-color=success data-dataset="[25, 66, 41, 89, 63, 25, 44, 12, 36, 9, 54]"></div>
+                            </div>
+                        </div>
+                        <div class="col-auto text-center">
+                            <span class="d-block h4 mb-0">16</span>
+                            <span class="d-block text-sm text-muted">Adet Satış</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <div class="actions d-flex justify-content-between">
+                        <a href="#" class="action-item">
+                            <span class="btn-inner--icon">Mağaza</span>
+                        </a>
+                        <a href="#" class="action-item">
+                            <span class="btn-inner--icon">Tüm Satışlar</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+            <div class="card hover-shadow-lg">
+                <div class="card-body text-center">
+                    <div class="avatar-parent-child">
+                        <img alt="Image placeholder" src="../../assets/img/brands/isbank.jpg" class="avatar  rounded avatar-lg">
+                        <!-- <span class="avatar-child avatar-badge bg-success"></span> -->
+                    </div>
+                    <h5 class="h6 mt-4 mb-0">İş Bankası</h5>
+                    <a href="#" class="d-block text-sm text-muted mb-3">Cevizlibağ</a>
+                    <div class="actions d-flex justify-content-between px-4">
+                        <a href="#" class="action-item">
+                            <i class="fas fa-user-edit"></i>
+                        </a>
+                        <a href="#" class="action-item">
+                            <i class="fas fa-bell"></i>
+                        </a>
+                        <a href="#" class="action-item">
+                            <i class="fas fa-trash-alt"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="card-body border-top">
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col-6">
+                            <div style="max-width: 120px;">
+                                <div class="spark-chart" data-toggle="spark-chart" data-type="line" data-height="50" data-color=success data-dataset="[51, 61, 45, 66, 48, 40, 68, 83, 27, 78, 48]"></div>
+                            </div>
+                        </div>
+                        <div class="col-auto text-center">
+                            <span class="d-block h4 mb-0">20</span>
+                            <span class="d-block text-sm text-muted">Adet Satış</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <div class="actions d-flex justify-content-between">
+                        <a href="#" class="action-item">
+                            <span class="btn-inner--icon">Mağaza</span>
+                        </a>
+                        <a href="#" class="action-item">
+                            <span class="btn-inner--icon">Tüm Satışlar</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+            <div class="card hover-shadow-lg">
+                <div class="card-body text-center">
+                    <div class="avatar-parent-child">
+                        <img alt="Image placeholder" src="../../assets/img/brands/eti.jpg" class="avatar  rounded avatar-lg">
+                        <!-- <span class="avatar-child avatar-badge bg-success"></span> -->
+                    </div>
+                    <h5 class="h6 mt-4 mb-0">Eti Mağaza</h5>
+                    <a href="#" class="d-block text-sm text-muted mb-3">Cevizlibağ</a>
+                    <div class="actions d-flex justify-content-between px-4">
+                        <a href="#" class="action-item">
+                            <i class="fas fa-user-edit"></i>
+                        </a>
+                        <a href="#" class="action-item">
+                            <i class="fas fa-bell"></i>
+                        </a>
+                        <a href="#" class="action-item">
+                            <i class="fas fa-trash-alt"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="card-body border-top">
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col-6">
+                            <div style="max-width: 120px;">
+                                <div class="spark-chart" data-toggle="spark-chart" data-type="line" data-height="50" data-color=success data-dataset="[94, 34, 96, 74, 36, 97, 15, 26, 54, 97, 23]"></div>
+                            </div>
+                        </div>
+                        <div class="col-auto text-center">
+                            <span class="d-block h4 mb-0">24</span>
+                            <span class="d-block text-sm text-muted">Adet Satış</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <div class="actions d-flex justify-content-between">
+                        <a href="#" class="action-item">
+                            <span class="btn-inner--icon">Mağaza</span>
+                        </a>
+                        <a href="#" class="action-item">
+                            <span class="btn-inner--icon">Tüm Satışlar</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+            <div class="card hover-shadow-lg">
+                <div class="card-body text-center">
+                    <div class="avatar-parent-child">
+                        <img alt="Image placeholder" src="../../assets/img/brands/shell.png" class="avatar  rounded avatar-lg">
+                        <!-- <span class="avatar-child avatar-badge bg-warning"></span> -->
+                    </div>
+                    <h5 class="h6 mt-4 mb-0">Shell</h5>
+                    <a href="#" class="d-block text-sm text-muted mb-3">Cevizlibağ</a>
+                    <div class="actions d-flex justify-content-between px-4">
+                        <a href="#" class="action-item">
+                            <i class="fas fa-user-edit"></i>
+                        </a>
+                        <a href="#" class="action-item">
+                            <i class="fas fa-bell"></i>
+                        </a>
+                        <a href="#" class="action-item">
+                            <i class="fas fa-trash-alt"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="card-body border-top">
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col-6">
+                            <div style="max-width: 120px;">
+                                <div class="spark-chart" data-toggle="spark-chart" data-type="line" data-height="50" data-color=warning data-dataset="[64, 56, 61, 42, 42, 63, 18, 96, 19, 36, 87]"></div>
+                            </div>
+                        </div>
+                        <div class="col-auto text-center">
+                            <span class="d-block h4 mb-0">28</span>
+                            <span class="d-block text-sm text-muted">Adet Satış</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <div class="actions d-flex justify-content-between">
+                        <a href="#" class="action-item">
+                            <span class="btn-inner--icon">Mağaza</span>
+                        </a>
+                        <a href="#" class="action-item">
+                            <span class="btn-inner--icon">Tüm Satışlar</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+            <div class="card card-fluid card-placeholder align-items-center justify-content-center">
+                <div class="text-center">
+                    <a href="#" class="stretched-link">
+                        <i class="fas fa-plus fa-2x text-muted"></i>
+                        <span class="h6 text-muted d-block mt-3">Yeni Mağaza Ekle</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer -->
+<div class="footer pt-5 pb-4 footer-light" id="footer-main">
+    <div class="row text-center text-sm-left align-items-sm-center">
+        <div class="col-sm-6">
+            <!-- <p class="text-sm mb-0">&copy; 2019 <a href="https://webpixels.io" class="h6 text-sm" target="_blank">Webpixels</a>. All rights reserved.</p> -->
+        </div>
+        <div class="col-sm-6 mb-md-0">
+            <ul class="nav justify-content-center justify-content-md-end">
+                <li class="nav-item dropdown border-right">
+                    <a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img alt="Image placeholder" src="../assets/img/icons/flags/ro.svg">
+                        <span class="h6 text-sm mb-0">RO</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-sm dropdown-menu-right">
+                        <a href="#" class="dropdown-item"><img alt="Image placeholder" src="../assets/img/icons/flags/es.svg" class="mr-2">Spanish</a>
+                        <a href="#" class="dropdown-item"><img alt="Image placeholder" src="../assets/img/icons/flags/us.svg" class="mr-2">English</a>
+                        <a href="#" class="dropdown-item"><img alt="Image placeholder" src="../assets/img/icons/flags/gr.svg" class="mr-2">Greek</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Support</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Terms</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link pr-0" href="#">Privacy</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</div>
