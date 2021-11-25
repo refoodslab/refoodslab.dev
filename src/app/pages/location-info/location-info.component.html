@@ -176,9 +176,9 @@
                     </div>
                     <div>
                         <span class="btn btn-block status btn-xs btn-success br-radius d-flex align-items-center mb-2 ">Günlük Elleçleme Listesi</span>
-                        <span class="btn btn-block status btn-xs btn-secondary br-radius d-flex align-items-center mb-2 ">SKT Biten Ürünler Listesi</span>
+                        <a href="#modal-task-create" class="btn btn-block status btn-xs btn-secondary br-radius d-flex align-items-center mb-2 " data-toggle="modal">SKT Biten Ürünler Listesi</a>
                         <span class="btn btn-block  btn-xs btn-secondary br-radius d-flex align-items-center mb-2 ">Çıkış İrsaliyesi</span>
-                        <span class="btn btn-block  btn-xs btn-secondary br-radius d-flex align-items-center mb-2 ">İmha Depo Listesi</span>
+                        <a href="#modal-task-create" class="btn btn-block  btn-xs btn-secondary br-radius d-flex align-items-center mb-2 " data-toggle="modal">İmha Depo Listesi</a>
                     </div>
                 </div>
                 <!--Map end-->
@@ -195,4 +195,18 @@
         </div>
     </div>
     <!--Body end-->
+
+    <!-- Create task modal -->
+    <div class="modal fade" id="modal-task-create" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <img src="assets/img/lsdk.png" alt="">
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-sm btn-primary rounded-pill mr-auto" data-dismiss="modal">Yazdır</button>
+                    <button type="button" class="btn btn-sm btn-link text-muted px-2">Cencel</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
